@@ -8,9 +8,9 @@ import pickle
 
 bot = commands.Bot(command_prefix="!")
 
-TOKEN = os.environ.get("TOKEN")
-API_KEY = os.environ.get("API_KEY")
-ORGANIZATION = os.environ.get("ORGANIZATION")
+TOKEN = os.environ["TOKEN"]
+API_KEY = os.environ["API_KEY"]
+ORGANIZATION = os.environ["ORGANIZATION"]
 
 token = TOKEN
 bot = commands.Bot(command_prefix='!')
