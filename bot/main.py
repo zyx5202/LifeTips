@@ -24,6 +24,10 @@ openai.Model.list()
 @bot.command()
 async def hello(ctx, arg=None):
   await ctx.send("hello! I'm test-bot!")
+  
+@bot.command()
+async def joseph(ctx, arg=None):
+  await ctx.send("what's up Joseph")
 
 @bot.command()
 async def bye(ctx, arg=None):
