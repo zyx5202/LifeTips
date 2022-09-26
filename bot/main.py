@@ -1,4 +1,5 @@
 import os
+import discord
 from discord.ext import commands
 import os
 from pathlib import Path
@@ -6,7 +7,8 @@ from datetime import datetime
 import openai
 import pickle
 
-bot = commands.Bot(command_prefix="!")
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 TOKEN = os.environ["TOKEN"]
 API_KEY = os.environ["API_KEY"]
