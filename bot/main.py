@@ -19,7 +19,7 @@ bot = commands.Bot(command_prefix='!')
 
 openai.organization = ORGANIZATION
 openai.api_key = API_KEY
-openai.Model.list()
+# openai.Model.list()
 
 @bot.command()
 async def hello(ctx, arg=None):
