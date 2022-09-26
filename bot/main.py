@@ -10,12 +10,9 @@ import pickle
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-TOKEN = os.environ["TOKEN"]
-API_KEY = os.environ["API_KEY"]
-ORGANIZATION = os.environ["ORGANIZATION"]
-
-token = TOKEN
-bot = commands.Bot(command_prefix='!')
+TOKEN = os.getenv("TOKEN")
+API_KEY = os.getenv("API_KEY")
+ORGANIZATION = os.getenv("ORGANIZATION")
 
 openai.organization = ORGANIZATION
 openai.api_key = API_KEY
