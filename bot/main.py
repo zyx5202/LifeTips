@@ -6,6 +6,9 @@ from pathlib import Path
 from datetime import datetime
 import openai
 import pickle
+from dotenv import load_dotenv
+
+load_dotenv()
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
